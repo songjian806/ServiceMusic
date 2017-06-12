@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_play"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_height="40dp" 
+        android:layout_width="match_parent"
+        android:background="#7777"
+        android:orientation="horizontal"
+		android:gravity="center_vertical"
+         >
+      <ImageView 
+          android:id="@+id/img_music_list_return"
+          android:layout_height="match_parent"
+          android:layout_width="wrap_content"
+          android:src="@drawable/dialog_standard_return_icon"
+          android:layout_marginLeft="8dp"
+          />
+      <TextView 
+          android:layout_height="match_parent"
+          android:layout_width="wrap_content"
+          android:text="我的音乐"
+          android:textColor="#fff"
+          android:gravity="center_vertical"
+          />
+      
+      <LinearLayout 
+          android:layout_height="match_parent"
+          android:layout_width="match_parent"
+          android:orientation="horizontal"
+          android:gravity="right"
+          >
+            <ImageView 
+          android:layout_height="match_parent"
+          android:layout_width="wrap_content"
+          android:src="@drawable/icon_search"
+          />
+            
+            <ImageView 
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:src="@drawable/icon_list_item_sort"
+                />
+          
+      </LinearLayout>
+         
+    </LinearLayout>
+    
+    
+<ListView 
+    android:id="@+id/listView"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_weight="1"
+    ></ListView>
+    
+		
+	<LinearLayout 
+	    android:layout_height="match_parent"
+	    android:layout_width="match_parent"
+	    android:layout_weight="6"
+	    android:orientation="vertical"
+	    >
+      
+	    <LinearLayout 
+	        android:layout_height="match_parent"
+	        android:layout_width="match_parent"
+	        android:layout_weight="3"
+	        android:orientation="horizontal"
+	        >
+            
+	        <TextView 
+	            android:id="@+id/text_view_musicTime01"
+	            android:layout_height="match_parent"
+	            android:layout_width="match_parent"
+	        	android:layout_weight="6"
+	        	android:gravity="center_vertical"
+	        	android:textSize="10dp"
+	        	android:layout_marginLeft="4dp"
+	            />
+	        
+	        <SeekBar 
+	        android:id="@+id/seekBar"
+	        android:layout_height="wrap_content"
+	        android:layout_width="match_parent"
+			android:thumb="@drawable/slider_thumb"
+			android:layout_weight="1"
+	        />
+	    	<TextView 
+	    	    android:id="@+id/text_view_musicTime02"
+	    	    android:layout_height="match_parent"
+	    	    android:layout_width="25dp"
+	    	    android:gravity="center_vertical"
+	        	android:textSize="10dp"
+	        	android:layout_marginRight="1dp"
+	    	    />
+	        
+	    </LinearLayout>
+
+	         <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:background="#7777"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+         >
+        
+            <ImageView 
+                android:id="@+id/img_play_go"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:src="@drawable/icon_subscription_genre"
+                />
+            
+            <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <TextView 
+                    android:id="@+id/tv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    />
+                <TextView 
+                    android:id="@+id/tv_artist"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    />
+                
+            </LinearLayout>
+             
+            <LinearLayout 
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView 
+                    android:id="@+id/text_view_musicName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    />
+                 <TextView 
+                    android:id="@+id/text_view_musicArtist"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+            
+            <LinearLayout 
+                android:orientation="horizontal"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="right"
+                
+                >
+				
+                <ImageView 
+                    android:id="@+id/play_mode"
+                    android:layout_height="match_parent"
+                    android:layout_width="20dp"
+                    android:src="@drawable/widget91_shunxu_normal"
+                    android:layout_marginRight="10dp"
+                    />
+                
+                <ImageView 
+                android:id="@+id/play"
+                android:layout_height="wrap_content"
+                android:layout_width="30dp"
+                android:src="@drawable/musicplayer_item_play_normal"
+                android:layout_gravity="center_vertical"
+                />
+                <ImageView 
+                    android:id="@+id/next"
+                    android:layout_height="wrap_content"
+                    android:layout_width="30dp"
+                    android:src="@drawable/musicplay_item_next_normal"
+                    android:layout_gravity="center_vertical" 
+                    />
+            </LinearLayout> 
+        
+    </LinearLayout>
+	        
+	    
+	</LinearLayout>
+
+	 	
+
+	   
+	    
+</LinearLayout>
